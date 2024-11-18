@@ -27,7 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
 
       {/* Footer */}
-      <footer className="col-start-2 row-start-3 bg-light text-dark py-6">
+      <footer className="col-start-2 row-start-3 bg-light text-dark py-6 ">
         <Footer />
       </footer>
     </div>
