@@ -139,7 +139,44 @@ const Dashboard = () => {
     <div className="p-6 bg-gray-100">
       <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
 
-   
+      {/* Filter Section */}
+      <div className="mb-6 bg-white p-4 shadow rounded-lg flex flex-col md:flex-row justify-between items-center">
+        <h2 className="text-lg font-semibold text-gray-700 mb-4 md:mb-0">
+          Filter Data:
+        </h2>
+        <div className="flex items-center space-x-4">
+          <button
+            onClick={() => handleFilterClick("Weekly")}
+            className={`px-4 py-2 rounded-lg ${
+              filterType === "Weekly" ? "bg-blue-600 text-white" : "bg-gray-200"
+            }`}
+          >
+            Weekly
+          </button>
+          <button
+            onClick={() => handleFilterClick("Monthly")}
+            className={`px-4 py-2 rounded-lg ${
+              filterType === "Monthly"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-200"
+            }`}
+          >
+            Monthly
+          </button>
+          <div className="relative">
+            <DatePicker
+              selected={startDate}
+              onChange={handleDateChange}
+              startDate={startDate}
+              endDate={endDate}
+              selectsRange
+              className="px-4 py-2 rounded-lg bg-gray-200"
+              dateFormat="MMMM d, yyyy"
+              placeholderText="Select Date Range"
+            />
+          </div>
+        </div>
+      </div>
 
       {/* Widgets Section */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
