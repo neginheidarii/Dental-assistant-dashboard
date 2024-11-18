@@ -1,12 +1,11 @@
 // Icon imports for visual indicators in the menu
 import { RiDashboardHorizontalFill } from "react-icons/ri";
-import { MdAccountBalance, MdAccountCircle } from "react-icons/md";
-import { FaMoneyBillTransfer, FaMoneyBills } from "react-icons/fa6";
-import { IoLogOut } from "react-icons/io5";
-import { IoMdSettings } from "react-icons/io";
+import { MdOutlineBusinessCenter } from "react-icons/md";
+import { FaMoneyBills } from "react-icons/fa6";
+import { PiPhoneCallBold } from "react-icons/pi";
+import { IoLogOut, IoChatboxEllipsesOutline } from "react-icons/io5";
 
-import logo from "../assets/logo-light.png"
-
+import logo from "../assets/logo-light.png";
 
 const Navbar = () => {
   return (
@@ -21,35 +20,33 @@ const Navbar = () => {
           <a className="text-base font-medium ml-4">Dashboard</a>
         </li>
         <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
-          <MdAccountBalance />
-          <a className="text-base font-medium ml-4">My Accounts</a>
+          <MdOutlineBusinessCenter />
+          <a className="text-base font-medium ml-4">Business Info</a>
         </li>
         <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300 ">
-          <FaMoneyBillTransfer />
-          <a className="text-base font-medium ml-4">Transfer Money</a>
+          <PiPhoneCallBold />
+          <a className="text-base font-medium ml-4">Call Resources</a>
+        </li>
+        <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
+          <IoChatboxEllipsesOutline />
+          <a className="text-base font-medium ml-4">Chat</a>
         </li>
         <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
           <FaMoneyBills />
-          <a className="text-base font-medium ml-4">Pay Bills</a>
+          <a className="text-base font-medium ml-4">Payment</a>
         </li>
-        <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
-          <IoMdSettings />
-          <a className="text-base font-medium ml-4">Settings</a>
-        </li>
-        <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
+
+        {/* <li className="flex items-center py-4 px-6 hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
           <MdAccountCircle />
           <a className="text-base font-medium ml-4">Profile</a>
-        </li>
-        <a className="btn flex items-center justify-center bg-transparent border border-white text-white px-4 py-3 ml-9 w-40 absolute bottom-5 left-5 rounded-lg hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
+        </li> */}
+        <a className="btn flex items-center justify-center bg-transparent border border-white text-white px-4 py-3  ml-9 w-40 absolute bottom-5 left-5 rounded-lg hover:bg-[#e7f5fe] hover:text-[#0f2d69] transition duration-300">
           <IoLogOut />
-          Logout
+          <p className="ml-1.5">Logout</p>
         </a>
       </ul>
     </div>
   );
 };
-
-
-
 
 export default Navbar;

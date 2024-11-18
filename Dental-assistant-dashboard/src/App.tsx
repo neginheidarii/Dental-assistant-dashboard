@@ -1,8 +1,16 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-
+import Dashboard from "./pages/Dashbaord";
 function App() {
   return (
-    <Layout />
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

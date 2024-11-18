@@ -1,10 +1,10 @@
 function TopBar() {
   return (
-    <div className="container mx-auto flex justify-between items-center py-3 px-6 mt-10">
+    <div className="container mx-auto flex justify-between items-center pb-10 px-8 mt-10 bg-white shadow-md box-border">
       {/* Right Section */}
-      <div className="fixed right-0 flex items-center space-x-4 pr-6">
+      <div className="fixed right-0 flex items-center space-x-6 pr-6 ">
         {/* Search Bar */}
-        <div className="relative w-64">
+        <div className="relative w-64 my-6">
           <input
             type="text"
             placeholder="Search..."
