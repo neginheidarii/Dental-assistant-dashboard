@@ -1,8 +1,8 @@
 function TopBar() {
   return (
-    <div className="container mx-auto flex justify-between items-center pb-10 px-8 mt-10 bg-white shadow-md box-border">
+    <div className="container mx-auto flex justify-between items-center pb-10 px-8 mt-10 shadow-md box-border">
       {/* Right Section */}
-      <div className="fixed right-0 flex items-center space-x-6 pr-6 ">
+      <div className="fixed right-0 flex items-center space-x-6 pr-6 bg-white ">
         {/* Search Bar */}
         <div className="relative w-64 my-6">
           <input
@@ -16,7 +16,7 @@ function TopBar() {
         </div>
 
         {/* Notifications */}
-        <button className="bg-[#0c2555] text-light px-4 py-2 rounded hover:bg-yellow-400 transition duration-300">
+        <button className="bg-[#0c2555] text-light px-4 py-2 rounded hover:bg-sky-500 transition duration-300">
           Notifications
         </button>
 
