@@ -178,6 +178,27 @@ const Dashboard = () => {
         </div>
       </div>
 
+      {/* Metrics Widgets */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Widget 1 */}
+        <div className="p-4 bg-white shadow rounded-lg">
+          <h2 className="text-lg font-semibold text-gray-700">Total Users</h2>
+          <p className="mt-2 text-3xl font-bold text-blue-600">1,234</p>
+        </div>
+        {/* Widget 2 */}
+        <div className="p-4 bg-white shadow rounded-lg">
+          <h2 className="text-lg font-semibold text-gray-700">Revenue</h2>
+          <p className="mt-2 text-3xl font-bold text-green-600">$12,345</p>
+        </div>
+        {/* Widget 3 */}
+        <div className="p-4 bg-white shadow rounded-lg">
+          <h2 className="text-lg font-semibold text-gray-700">
+            Active Sessions
+          </h2>
+          <p className="mt-2 text-3xl font-bold text-red-600">456</p>
+        </div>
+      </div>
+
       {/* Widgets Section */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Tickets Open Visualization */}
